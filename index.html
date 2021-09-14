@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/destyle.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="images/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#848484">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Blitzboard</title>
+</head>
+
+<body>
+    <div class="bg">
+        <header class="js-header">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div id="hamburger">
+                <div class="icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav class="sm">
+                <ul>
+                    <li><a href="#Features">Features</a></li>
+                    <li><a href="#Showcase">Showcase</a></li>
+                </ul>
+            </nav>
+            <nav class="pc">
+                <ul>
+                    <li><a href="#Features">Features</a></li>
+                    <li><a href="#Showcase">Showcase</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section class="kv_wrap space">
+            <div class="main_copy">
+                <h1>Realtime Dashboard</br>for Complex Information</h1>
+                <p>Open-source,Realtime Dashboard</br>
+                    for Relationships</p>
+                <a href="https://sandbox.blitzboard.io/" class="btn">Go to Sandbox</a>
+                <a href="https://docs.blitzboard.io/" class="btn">Documentation</a>
+            </div>
+            <div class="main_img">
+                <img src="images/kv.png" alt="kv">
+            </div>
+        </section>
+        <div class="content_wrap space" id="Features">
+            <h1>Features</h1>
+            <div id="cardlayout_wrap">
+                <section class="card_list">
+                    <div class="card_link">
+                        <figure class="card_figure"><img src="images/features1.png"></figure>
+                        <h2 class="card_title">Open-source</h2>
+                        <p class="card_text_tax">All features are freely available for academic and commercial use, and
+                            anyone
+                            can contribute to the project.</p>
+                        <div class="card_btn_wrap"><a href="https://github.com/g2glab/blitzboard" class="card_btn">View
+                                on GitHub</a></div>
+                    </div>
+                </section>
+                <section class="card_list">
+                    <div class="card_link">
+                        <figure class="card_figure"><img src="images/features2.png"></figure>
+                        <h2 class="card_title">Freely Available</h2>
+                        <p class="card_text_tax">For personal use, the web edition is convenient. You can immediately
+                            create
+                            graphs and share with others.</p>
+                        <div class="card_btn_wrap"><a href="https://sandbox.blitzboard.io/" class="card_btn">Go to
+                                Sandbox</a></div>
+                    </div>
+                </section>
+                <section class="card_list">
+                    <div class="card_link">
+                        <figure class="card_figure">
+                            <img src="images/features3.png">
+                        </figure>
+                        <h2 class="card_title">Enterprise Use</h2>
+                        <p class="card_text_tax">Blitzboard can integrate with graph databases for enterprise security
+                            and
+                            data
+                            management.</p>
+                        <div class="card_btn_wrap"><a href="#" class="card_btn">Launch on Cloud</a></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="showcase_wrap space" id="Showcase">
+            <h1>Showcase</h1>
+            <div class="showcase_contents">
+                <img src="images/showcase1.png">
+                <div class="showcase_text">
+                    <h3>Heterogeneous information in a single view for personalized marketing and fraud detection</h3>
+                    <p>In graph visualization, the nodes can represent persons, houses, cars, schools, bank accounts, or
+                        any. They are also connected by various relationship types. Blitzboard helps customer 360
+                        degrees
+                        analysis and fraudulent patterns with its capability to draw network graphs and customize them.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="contact_wrap space" id="contact">
+            <h1>Try now</h1>
+            <div class="contact_btn">
+                <a href="https://github.com/g2glab/blitzboard" class="btn">View on GitHub</a>
+                <a href="https://sandbox.blitzboard.io/" class="card_btn">Go to
+                    Sandbox</a>
+                <a href="#" class="btn">Launch on Cloud</a>
+            </div>
+            <p>©︎ 2021 Blitzboard, All Rights Reserved. </p>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $('#hamburger').on('click', function () {
+            $('.icon').toggleClass('close');
+            $('.sm').slideToggle();
+        });
+    </script>
+    <script>
+        jQuery(window).on('scroll', function () {
+            if (jQuery('header').height() < jQuery(this).scrollTop()) {
+                jQuery('header').addClass('change-color');
+            }
+            else {
+                jQuery('header').removeClass('change-color');
+            }
+        });
+    </script>
+</body>
+
+</html>
