@@ -218,7 +218,7 @@ header nav ul li a {
 
 #cardlayout_wrap img {
   display: block;
-  max-width: 100%;
+  max-width: 110px;
   height: auto;
   margin: -3em auto 0;
 }
@@ -319,6 +319,7 @@ a.card_btn:hover {
 }
 
 .showcase_wrap .showcase_contents img {
+  width: 350px;
   float: left;
   margin-right: 1em;
 }
